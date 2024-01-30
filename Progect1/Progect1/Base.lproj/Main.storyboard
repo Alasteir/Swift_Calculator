@@ -75,8 +75,8 @@
                                         <fragment content=".           ">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="24" name="Verdana-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2" tighteningFactorForTruncation="0.0"/>
+                                                <font key="NSFont" size="25" name="Verdana-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -316,9 +316,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="AC">
+                                        <fragment content="⌫">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="Verdana-Bold"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="64" name="LucidaGrande-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -394,18 +395,27 @@
                                     <fragment content="0">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="60" name="Helvetica"/>
+                                            <font key="NSFont" size="40" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" bouncesZoom="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-MT-q3g">
+                                <rect key="frame" x="20" y="44" width="374" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="histori" destination="WrZ-MT-q3g" id="vab-fd-QH3"/>
                         <outlet property="result" destination="Zg1-UA-v69" id="S9Y-BQ-oc1"/>
                     </connections>
                 </viewController>
